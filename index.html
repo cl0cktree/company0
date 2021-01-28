@@ -10,9 +10,11 @@
 		<meta name="Keywords" content="부동산 계약 통합 플랫폼, 원스톱 온라인 계약, 공유오피스 운영, 콜센터 운영, 공인중개사 공유오피스 임대">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<link rel="stylesheet" type="text/css" href='./css/nanumgothic.css'>
+		<link rel="stylesheet" type="text/css" href='./css/nanumbarungothic.css'>
 		<link rel="stylesheet" type="text/css" href="./css/style.css">
 		<link rel="stylesheet" type="text/css" href="./css/randing.css">
 		<link rel="stylesheet" type="text/css" href="./css/slide.css">
+		<link rel="stylesheet" type="text/css" href="./css/player.css">
 
 		<link rel="icon" type="image/x-icon" href="./images/favicon.ico">
 
@@ -44,6 +46,7 @@
 		<script src="./js/jquery-3.2.1.min.js"></script>
 		<script defer src="./js/randing.js"></script>
 		<script defer src="./js/slide.js"></script>
+		<!--<script defer src="./js/video_player.js"></script>-->
 		<!-- <script src="./js/cover.js"></script> -->
 		<!--[if lte IE 8]>
 		<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
@@ -72,7 +75,7 @@
 					</li>
 					<li class="gnb-3" data-index="3">
 						<a href="javascript:;" class="color_black">
-							기업지원
+							경제정보
 						</a>
 					</li>
 					<li class="gnb-4" data-index="4">
@@ -81,15 +84,15 @@
 						</a>
 					</li>
 				</ul>
-				<div class="language" tabindex="1">
-					<a data-lang="val">Kor</a>
-					<a data-lang="Kor">Kor</a>
-					<a data-lang="Eng">Eng</a>
-					<a data-lang="Chi">Chi</a>
+				<div class="language">
+					<a data-lang="val" tabindex="0">Kor</a>
+					<a data-lang="Kor" tabindex="1">Kor</a>
+					<a data-lang="Eng" tabindex="2">Eng</a>
+					<a data-lang="Chi" tabindex="3">Chi</a>
 				</div>
 				<h2 class="menu_btn">
 					<input type="checkbox" name="menuChck" id="menuChck">
-					<label for="menuChck">
+					<label for="menuChck" tabindex="0">
 						<span></span>
 						<span class="menu_btn_caption">
 							모바일 메뉴 버튼
@@ -113,7 +116,7 @@
 					</li>
 					<li class="gnb-3" data-index="3">
 						<a href="javascript:;" class="color_black">
-							기업지원
+							경제정보
 						</a>
 					</li>
 					<li class="gnb-4" data-index="4">
@@ -122,11 +125,11 @@
 						</a>
 					</li>
 				</ul>
-				<div class="language-mobile" tabindex="0">
-					<a data-lang="val">Kor</a>
-					<a data-lang="Kor">Kor</a>
-					<a data-lang="Eng">Eng</a>
-					<a data-lang="Chi">Chi</a>
+				<div class="language-mobile">
+					<a data-lang="val" tabindex="0">Kor</a>
+					<a data-lang="Kor" tabindex="0">Kor</a>
+					<a data-lang="Eng" tabindex="0">Eng</a>
+					<a data-lang="Chi" tabindex="0">Chi</a>
 				</div>
 			</div>
 		</div>
@@ -134,6 +137,11 @@
 			<div class="article_0 article" data-index = "0">
 				<div class="randing-wrap">
 					<div class="randing-background">
+						<h1 class="randing-top">
+							<a href="http://fixability.co.kr">
+								<img src="./images/logo.png" alt="fixability logo">
+							</a>
+						</h1>
 						<div class="phon-animate">
 						</div>
 						<div class="randing-container">
@@ -144,36 +152,49 @@
 								<div class="randing randing_4" data-randing="4"></div>
 							</div>
 							<div class="message-background">
-								<div class="catch-wrap">
-									<span class="catch-1">
-										Winner & Winner
-									</span>
-									<span class="catch-2">
-										Office & Support
-									</span>
-									<span class="catch-3">
-										Anytime	Anywhere
-									</span>
-									<span class="catch-4">
-										Trust & Security
-									</span>
+								<div class="message-wrap">
+									<div class="catch-wrap">
+										<span class="catch-1">
+											Any Time,<br> Any Where
+										</span>
+										<span class="catch-2">
+											Office & Support
+										</span>
+										<span class="catch-3">
+											Anytime	Anywhere
+										</span>
+										<span class="catch-4">
+											Trust & Security
+										</span>
+									</div>
+									<div class="message message-1">
+										언제 어디서나 원하는 곳에서<br>
+										안전한 부동산 거래를 시작한다<br>
+									</div>
+									<div class="message message-2">
+										공인중개사분들의 든든한 사업 파트너가 되겠습니다.<br>
+										저희와 함께 할 공인중개사분들을 모집 합니다.<br>
+									</div>
+									<div class="message message-3">
+										언제 어디서나 원하는 곳에서 안전한 부동산 거래<br>
+										픽스어빌리티<br>
+									</div>
+									<div class="message message-4">
+										신뢰받는 기업,<br>
+										혁신으로 미래를 여는 기업이 되겠습니다.<br>
+									</div>
 								</div>
-								<div class="message message-1">
-									공인중개사와 부동산 거래를 원하는 분들 모두에게<br>
-									도움이 되는 서비스<br>
-								</div>
-								<div class="message message-2">
-									공인중개사분들의 든든한 사업 파트너가 되겠습니다.<br>
-									저희와 함께 할 공인중개사분들을 모집 합니다.<br>
-								</div>
-								<div class="message message-3">
-									언제 어디서나 원하는 곳에서 안전한 부동산 거래<br>
-									픽스어빌리티<br>
-								</div>
-								<div class="message message-4">
-									신뢰받는 기업,<br>
-									혁신으로 미래를 여는 기업이 되겠습니다.<br>
-								</div>
+								<ul class="randing-nav">
+									<li data-index="1">
+										<a href="javascript:;" class="nav_btn nav_btn_1 ">사업 방향</a>
+									</li>
+									<li data-index="2">
+										<a href="javascript:;" class="nav_btn nav_btn_2">사업 분야</a>
+									</li>
+									<li data-index="3">
+										<a href="javascript:;" class="nav_btn nav_btn_3">기업 소개</a>
+									</li>
+								</ul>
 							</div>
 						</div>
 					</div>
@@ -188,40 +209,246 @@
 							사업방향
 						</span>
 					</h3>
-					<div class="slide-wrap slide-wrap1"></div>
-					<div class="graph-1 graph">
-						<div class="sevice_title">
-							<div>
-								<span>현재</span>, 부동산 시장의 실태
-							</div>
+					<div class="slogan-box slogan-box_1">
+						<div class="line-box">
+							<span class="slogan_color">
+								First Mover, First Follower
+							</span>
+							<span class="slogan_sub">
+								부동산 시장의 저비용, 고효율 시대를 열겠습니다
+							</span>
 						</div>
+					</div>
+					<div class="word vision">
+						<div>
+							<h4 class="word-title">
+								픽스어빌리티의 <span>비전</span>
+							</h4>
+							픽스어빌리티(Fixability)는 ‘의사 결정을 신속히 할 수 있도록 도와주는 소통공간’이라는 뜻으로, 우리사회에 일부 존재하는 불신의 벽을 넘어 소통과 소통이 손을 맞잡고 믿음을 통하여 우리의 일상이 풍요해 지도록 준비하고 노력하는 회사로 성장하는 것을 목표로 하고있습니다.
+						</div>
+					</div>
+					<div class="word mission">
+						<div>
+							<h4 class="word-title">
+								픽스어빌리티의 <span>미션</span>
+							</h4>
+							부동산 거래 계약은 우리의 중요한 일상의 한 부분을 차지하고 있지만 제대로 된 서비스를 받을 수 없는 사회적 시스템임을 부인할 수 없습니다. 여기에 우리의 생각과 기술을 토대로 간편한 표준 계약 시스템을 담아내어 신뢰를 통한 투명한 사회가 되도록, 상상하는 관련 서비스와 컨텐츠 개발에 역량을 집중하는 현실을 만들겠습니다.
+						</div>
+					</div>
+					<div class="graph-1 graph">
 						<div class="graph-img">
-							<div class="img-wrap">
-								<img src="./images/image_damge_graph.png" alt="부동산 플랫폼 피해 유형, 앱 정보와 실제 가격 상이 38.5%, 거래 완료된 매물 계속 표시 33.7%, (동일건물 내) 양호한 매물 사진만 게시 17.2%, (동일건물 내) 최저가 매물만 표시 10.6%, 출처 한국소비자연맹, 단위 백분율">
+							<div class="graph_title">
+								<div>
+									부동산 시장의 <span>현황</span>
+								</div>
 							</div>
 							<div class="img-wrap">
-								<img src="./images/image_Declaration_graph.png" alt="연도별 허위매물 신고건수, 2015년 25986건, 2016년 42488건, 2017년 39267건, 2018년 116012건, 출처 부동산 매물 클린 관리센터, 단위 건당">
+								<img src="./images/chart1_damge.png" alt="부동산 플랫폼 피해 유형, 앱 정보와 실제 가격 상이 38.5%, 거래 완료된 매물 계속 표시 33.7%, (동일건물 내) 양호한 매물 사진만 게시 17.2%, (동일건물 내) 최저가 매물만 표시 10.6%, 출처 한국소비자연맹, 단위 백분율">
+								<div class="chart-analysis">
+									<div class="analysis-title">
+										부동산 플랫폼 <span>피해유형</span>
+									</div>
+									<div class="analysis-box">
+										현재 널리 사용되고 있는 부동산 플랫폼의 피해 유형에 대하여 한국 소비자연맹측의 분석결과입니다.<br>
+										허위 매물들이 잡히지 않고, 여러 피해사례가 있습니다.<br>
+									</div>
+								</div>
 							</div>
 							<div class="img-wrap">
-								<img src="./images/image_circle_graph.png" alt="부동산 직거래 비선호 이유, 계약사기 및 사고위험 47.8%, 부동산 지식 부족 18.6%, 구제 어려움 14.3%, 기타 19.3%, 출처 벼룩시장 부동산, 단위 백분율">
+								<img src="./images/chart2_declaration.png" alt="연도별 허위매물 신고건수, 2015년 25986건, 2016년 42488건, 2017년 39267건, 2018년 116012건, 출처 부동산 매물 클린 관리센터, 단위 건당">
+								<div class="chart-analysis">
+									<div class="analysis-title">
+										연도별 <span>허위매물 신고</span> 건수
+									</div>
+									<div class="analysis-box">
+										현재 널리 사용되고 있는 부동산 플랫폼의 피해 유형에 대하여 부동산 매물 클린 관리센터의 분석내용입니다.<br>
+										꾸준하게 상승세를 보이고 있으며, 아직 허위매물에 대한 단속이 어려운 것이 현재 상태입니다.<br>
+									</div>
+								</div>
 							</div>
 							<div class="img-wrap">
-								<img src="./images/image_needs.png" alt="소비자의 needs, 계약 및 권리확보까지 한번에 가능했으면 좋겠다, 처음부터 끝까지 전분적인 케어가 되면 좋겠다, 서류를 챙기는 과정이 까다롭고 복잡하다, 부동산 흐름이나 전망 같은 정보성 컨탠츠가 있으면 좋겠다.">
+								<img src="./images/chart3_circle.png" class="circle_chart" alt="부동산 직거래 비선호 이유, 계약사기 및 사고위험 47.8%, 부동산 지식 부족 18.6%, 구제 어려움 14.3%, 기타 19.3%, 출처 벼룩시장 부동산, 단위 백분율">
+								<div class="chart-analysis">
+									<div class="analysis-title">
+										부동산 <span>직거래 비선호</span> 이유
+									</div>
+									<div class="analysis-box">
+										현재 널리 사용되고 있는 부동산 플랫폼의 피해 유형에 대하여 벼룩시장 부동산의 분석내용입니다.<br>
+										계약사기가 많고, 사고위험이 높은 것이 제일 높은 비율을 차지하며 비선호 이유로 뽑혔습니다.<br>
+									</div>
+								</div>
+							</div>
+							<div class="graph_title">
+								<div>
+									소비자의 <span>NEEDS</span>
+								</div>
+							</div>
+							<div class="img-wrap need-wrap">
+								<div class="chart-need">
+									<div class="need-box">
+										<span>1.</span> 계약 및 권리확보까지 한번에 가능했으면 좋겠다.
+									</div>
+									<div class="need-box">
+										<span>2.</span> 처음부터 끝까지 전문적인 케어가 되면 좋겠다.
+									</div>
+									<div class="need-box">
+										<span>3.</span> 서류를 챙기는 과정이 까다롭고 복잡하다.
+									</div>
+									<div class="need-box">
+										<span>4.</span> 부동산 흐름이나 전망 같은 정보성 컨텐츠가 있으면 좋겠다.
+									</div>
+								</div>
+								<img src="./images/new_need.png" class="need-img" alt="소비자의 needs, 계약 및 권리확보까지 한번에 가능했으면 좋겠다, 처음부터 끝까지 전분적인 케어가 되면 좋겠다, 서류를 챙기는 과정이 까다롭고 복잡하다, 부동산 흐름이나 전망 같은 정보성 컨탠츠가 있으면 좋겠다.">
 							</div>
 						</div>
 					</div>
 					<div class="graph-2 graph">
-						<div class="sevice_title">
-							<div>
-								<span>그래서</span>, 시작했습니다.
+						<div class="graph_title">
+							<div class="then-start">
+								<span>그래서, 시작했습니다.</span>
 							</div>
 						</div>
 						<div class="graph-img">
-							<div class="img-wrap">
-								<img src="./images/image_contact.png" alt="4단계 논스톱 계약 진행, step1 매물 탐색 시 사진과 실물의 차이를 최소화 하여 허위 매물 근절, step2 서류 확인 및 계약 시 등기부/토지대장/매매계약서 등 모든 서류 열람 가능, step3 비용 지급 시 계약금 지급부터 잔금 지급까지 4단계 보안 시스템 무한 책임제, step4 권리 확보 시 원터치로 등기까지 소유권 취득 및 취득세 납부 가능, 걱정zero 강화된 보안 기술로 거래사기 원천 차단, 허위매물zero 미끼상품 없이 실매물만 운영, 스트레스zero 원터치로 서류준비부터 계약까지 완료">
+							<div class="graph_title">
+								<div>
+									<span>4단계 논스톱</span> 계약 진행
+								</div>
 							</div>
 							<div class="img-wrap">
-								<img src="./images/image_broker.png" alt="중개사들의 파트너, 공인 중개업 매출 하락 및 폐업사례 증가추세에 픽스어빌리티에서 제공하는 전용 오피스로 새로운 기회를 만들어 보세요.">
+								<div class="step-box-wrap">
+									<div class="step-box step-box-1">
+										<div class="circle-pigtogeulaem">
+										</div>
+										<div class="step-wrap">
+											<div class="step-title">
+												<span>
+													STEP. 1
+												</span>
+												매물탐색
+											</div>
+											<div class="step-word">
+												허위 매물 근절<br><br>
+												사진과 실물의차이를 최소화<br>
+											</div>
+										</div>
+									</div>
+									<div class="step-box step-box-2">
+										<div class="circle-pigtogeulaem">
+										</div>
+										<div class="step-wrap">
+											<div class="step-title">
+												<span>
+													STEP. 2
+												</span>
+												서류 확인 및 계약
+											</div>
+											<div class="step-word">
+												모든 서류 열람 가능<br><br>
+												등기부등본<br>
+												토지대장<br>
+												매매계약서 등<br>
+											</div>
+										</div>
+									</div>
+									<div class="step-box step-box-3">
+										<div class="circle-pigtogeulaem">
+										</div>
+										<div class="step-wrap">
+											<div class="step-title">
+												<span>
+													STEP. 3
+												</span>
+												비용 지급
+											</div>
+											<div class="step-word">
+												4단계 보안 시스템<br>
+												무한 책임제<br><br>
+												계약금 지급부터<br>
+												잔금 지급까지<br>
+											</div>
+										</div>
+									</div>
+									<div class="step-box step-box-4">
+										<div class="circle-pigtogeulaem">
+										</div>
+										<div class="step-wrap">
+											<div class="step-title">
+												<span>
+													STEP. 4
+												</span>
+												권리 확보
+											</div>
+											<div class="step-word">
+												원터치로 등기까지<br><br>
+												소유권 취득 및 납부 가능<br>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="graph_title margin_top-90px">
+								<div>
+									<span>3</span> ZERO
+								</div>
+							</div>
+							<div class="img-wrap">
+								<div class="triple-zero-wrap">
+									<div class="zero-circle zero-circle-1">
+										<div class="zero">
+											<span>
+												걱정 ZERO
+											</span>
+											강화된 보안 기술로<br>
+											거래사기 원천 차단<br>
+										</div>
+									</div>
+									<div class="zero-circle zero-circle-2">
+										<div class="zero">
+											<span>
+												허위매물 ZERO
+											</span>
+											미끼상품 없이<br>
+											실매물만 운영<br>
+										</div>
+									</div>
+									<div class="zero-circle zero-circle-3">
+										<div class="zero">
+											<span>
+												스트레스 ZERO
+											</span>
+											원터치로<br>
+											서류준비부터 계약까지 완료<br>
+										</div>
+									</div>
+								</div>
+								<div class="chart-analysis">
+									<div class="analysis-title">
+										계약 환경 <span>개선</span>
+									</div>
+									<div class="analysis-box">
+										체인 블록 기술을 이용하여 사기를 막아, 걱정없이 부동산 직거래를 사용할 수 있게 하겠습니다. 미끼상품(양호한 매물 사진만 게시/ 최저가 상품만
+										게시)없이, 실제 거래될 매물만을 업로드 가능한 환경을조성하여 허위매물을 줄이겠습니다. 번거로운 서류 준비과정을 줄여 스트레스 없는 계약
+										환경을 만들겠습니다. <br>
+									</div>
+								</div>
+							</div>
+
+							<div class="graph_title margin_top-90px">
+								<div>
+									Fixability의 <span>역할</span>
+								</div>
+							</div>
+							<div class="img-wrap">
+								<img src="./images/cycle.png" alt="소비자에 대한 편의성 제공과 공인중개사에 대한 지원으로 시장활성화에 앞장 서겠습니다.">
+								<div class="chart-analysis">
+									<div class="analysis-title">
+										부동산 시장의 <span>활성화</span>
+									</div>
+									<div class="analysis-box">
+										소비자에겐 편의성을 제공하고, 중개자에겐 지원을 여러가지 지원을 약속합니다. 그로 인해 더욱 퀄리티 높은 거래가 진행됩니다.<br>
+										저비용 고효율의 거래환경을 조성하여 시장 활성화를 돕습니다.<br>
+									</div>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -236,77 +463,21 @@
 							사업분야
 						</span>
 					</h3>
+					<div class="slogan-box slogan-box_2">
+						<div class="line-box">
+							<span class="slogan_color">
+								First Mover, First Follower
+							</span>
+							<span class="slogan_sub">
+								부동산 시장의 저비용, 고효율 시대를 열겠습니다
+							</span>
+						</div>
+					</div>
 					<div class="card-wrap">
 						<div class="card card_1">
-							<div class="sevice_title">
-								<div>
-									부동산 <span>전자계약 플랫폼</span>
-								</div>
-								<div>
-									처음부터 끝까지 <span>한번에</span> 진행됩니다
-								</div>
-							</div>
-							<p>
-								부동산 매물 정보 제공<br><br>
-								매물 등록시, 매도자가 공인중개사를 <span>선택</span>하여 서비스 이용<br><br>
-								중개자의 <span>신원정보 및 상세 프로필</span> 제공<br><br>
-								계약시, 중개인/ 매도자/ 매수자 사이의 <span>3자 영상 통화</span> 서비스 제공<br><br>
-								AR,  VR/ 3D/ 사진을 통하여 매물 정보 확인 가능<br><br>
-								전자 문서 열람 및 발급, 비대면 대출 서비스 제공<br><br>
-								계약의 전과정은 <span>논스톱</span>으로 진행<br><br>
-							</p>
+							<img src="./images/six_item.png" alt="">
 						</div>
-						<div class="card card_2">
-							<div class="sevice_title">
-								<div>
-									공인중개사 <span>전용 공유 오피스</span>
-								</div>
-								<div>
-									부동산 시장의 <span>한계</span>를 넘어선다
-								</div>
-							</div>
-							<p>
-								업무 최적화 오피스 <span>무상제공</span><br><br>
-								오피스 내 시설 <span>무료 이용</span>( 팩스, 음료, 미팅룸, 자료실, 휴게실 등)<br><br>
-								사업자 등록시, 세무/회계/법무/노무 <span>컨설팅 직간접적 지원</span><br><br>
-								전용 관리자 <span>메신저</span>(영상, 음성, 3D빌더) 제공<br><br>
-								중개사 사업자 <span>전화</span>(1588서비스) 제공<br><br>
-								중개사 개별 홍보용 <span>홈페이지</span> 및 바이럴 <span>마케팅</span> 지원<br><br>
-							</p>
-						</div>
-						<div class="card card_3">
-							<div class="sevice_title">
-								<div>
-									<span>전자계약 플랫폼</span> 부대 운영
-								</div>
-								<div>
-									관련서비스와의 <span>시너지</span>로 사업 모델 완성
-								</div>
-							</div>
-							<p>
-								전국 부동산 <span>매물정보 공유</span> 사이트<br><br>
-								3D 건출물 <span>빌더</span>/ 실시간 <span>현장 실사(위성)</span> 제공<br><br>
-								실시간 매물 현장 <span>원격 렌더링</span><br><br>
-								전국 관공서 <span>전자 서류 발급</span> 대행<br><br>
-								<span>대출</span>업무 연계 지원<br><br>
-								비대면 <span>화상통화</span> 지원<br><br>
-							</p>
-						</div>
-						<div class="card card_4">
-							<div class="sevice_title">
-								<div>
-									<span>1588</span> 매도 / 매수 콜 서비스
-								</div>
-								<div>
-									<span>완벽</span>하고 <span>신속</span>한 의사결정 지원 시스템
-								</div>
-							</div>
-							<p>
-								1588 대표번호 매도 후 자사 공인중개사에게 <span>직접 매도</span><br><br>
-								자사 공인중개사에게 <span>1588 연계 서비스</span>(공유오피스  등) 지원<br><br>
-								<span>해외 진출</span> 중개사의 경우, <span>통역 서비스</span> 지원<br><br>
-							</p>
-						</div>
+						<div class="slide-wrap slide-wrap1"></div>
 
 					</div>
 
@@ -318,19 +489,32 @@
 				<div class="contents">
 					<h3>
 						<span>
-							기업지원
+							경제정보
 						</span>
 					</h3>
-					<div class="greeting">
-						<div class="word">
-							<div>
-								현재 준비 중 입니다.
-							</div>
+					<div class="slogan-box slogan-box_3">
+						<div class="line-box">
+							<span class="slogan_color">
+								First Mover, First Follower
+							</span>
+							<span class="slogan_sub">
+								부동산 시장의 저비용, 고효율 시대를 열겠습니다
+							</span>
 						</div>
 					</div>
-					<div class="container">
-						
+					<div class="with">
+						<div class="board_ceo">
+							<iframe src="https://fixshowping.cafe24.com/board/%EB%B6%80%EB%8F%99%EC%82%B0%EC%A0%95%EB%B3%B4/1" title="경제정보 게시판 입니다.">
+							</iframe>
+						</div>
 					</div>
+<!-- 
+					<div class="container thebell">
+						<a href="">
+							<img src="./images/thebell-logo.png" alt="경제전문 사이트 더밸로 이동">
+						</a>
+					</div>
+					 -->
 				</div>
 			</div>
 			<div class="article_4 article" data-index = "4">
@@ -342,17 +526,29 @@
 							Q n A
 						</span>
 					</h3>
+					<div class="slogan-box slogan-box_4">
+						<div class="line-box">
+							<span class="slogan_color">
+								First Mover, First Follower
+							</span>
+							<span class="slogan_sub">
+								부동산 시장의 저비용, 고효율 시대를 열겠습니다
+							</span>
+						</div>
+					</div>
 					<div class="greeting">
-						<div class="word">
-							<div>
-								현재 준비 중 입니다.
-							</div>
+						<div class="qna-board">
+							<iframe src="https://fixshowping.cafe24.com/board/qna/3" title="QnA 게시판 입니다.">
+							</iframe>
 						</div>
 					</div>
 					<div class="container">
 						
 					</div>
 				</div>
+			</div>
+			<div class="article_5 article email_send" data-index = "5">
+				<iframe src="./form-mail/email.php" title="이메일 문의 입니다."></iframe>
 			</div>
 			<a href="javascript:;" class="top_btn" tabindex="1">
 				Top
@@ -389,6 +585,11 @@
 				</span>
 				<span class="address-phon">
 					연락처 : <a class="phon-num">02-6952-8892</a>
+				</span>
+			</div>
+			<div class="copyright">
+				<span>
+					copyright ⓒ fixability all rights reserved.
 				</span>
 			</div>
 		</div>
