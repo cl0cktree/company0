@@ -47,7 +47,7 @@ $(function(){
 							// else{
 							// 	msheight = '100vh';
 							// }
-							msheight = $('.slide').children('img').height();
+							msheight = $('.slide').children('img').height()+90;
 							article_height = $('.article').height();
 							$('.slide-wrap').css({'height':msheight});
 						}
@@ -85,7 +85,7 @@ $(function(){
 			// else{
 			// 	msheight = '100vh';
 			// }
-			msheight = $('.slide').children('img').height();
+			msheight = $('.slide').children('img').height()+90;
 
 			$(window).resize(function(){
 				var delay_time;
@@ -98,7 +98,7 @@ $(function(){
 						// else{
 						// 	msheight = '100vh';
 						// }
-						msheight = $('.slide').children('img').height();
+						msheight = $('.slide').children('img').height()+90;
 						var mswidth = $('.slide').each(Array).length;/*-슬라이드 전체 배열의 갯수만큼의 숫자를 추출-*/
 						wrapwidth = mswidth*100;
 						s_width = $('.slide').width();
@@ -286,13 +286,13 @@ $(function(){
 							}
 						};
 					}
-					if(yvalue>cal_height){
-						$('body, html').stop().animate({ scrollTop: $("body").offset().top+yvalue },300);
-					}else if(yvalue<cal_height){
-						if((yvalue*-1)>cal_height){
-							$('body, html').stop().animate({ scrollTop: $("body").offset().top+yvalue },300);
-						}
-					}
+					// if(yvalue>cal_height){
+					// 	$('body, html').stop().animate({ scrollTop: $("body").offset().top+yvalue },300);
+					// }else if(yvalue<cal_height){
+					// 	if((yvalue*-1)>cal_height){
+					// 		$('body, html').stop().animate({ scrollTop: $("body").offset().top+yvalue },300);
+					// 	}
+					// }
 					$('.slide-container').css({'left':updown+'%'});
 				}
 				else if (event.type=='touchend')
@@ -339,17 +339,17 @@ $(function(){
 							$('.slide-container').stop().animate({'left':drag_return+'%'},boundspeed);
 						}
 					}else if(((tvalue<10)&&(tvalue>-10))||(tvalue==0)){
-						if(yvalue==0){
-							// click_move();
-						}else{
-							if(yvalue>cal_height){
-								$('body, html').stop().animate({ scrollTop: $("body").offset().top+yvalue },300);
-							}else if(yvalue<cal_height){
-								if((yvalue*-1)>cal_height){
-									$('body, html').stop().animate({ scrollTop: $("body").offset().top+yvalue },300);
-								}
-							}
-						}
+						// if(yvalue==0){
+						// 	// click_move();
+						// }else{
+						// 	if(yvalue>cal_height){
+						// 		$('body, html').stop().animate({ scrollTop: $("body").offset().top+yvalue },300);
+						// 	}else if(yvalue<cal_height){
+						// 		if((yvalue*-1)>cal_height){
+						// 			$('body, html').stop().animate({ scrollTop: $("body").offset().top+yvalue },300);
+						// 		}
+						// 	}
+						// }
 					}
 					$('.slide'+app_sort).remove('');
 					// start_s();
@@ -398,17 +398,17 @@ $(function(){
 							$('.slide-container').stop().animate({'left':drag_return+'%'},boundspeed);
 						}
 					}else if(((tvalue<10)&&(tvalue>-10))||(tvalue==0)){
-						if(yvalue==0){
-							// click_move();
-						}else{
-							if(yvalue>cal_height){
-								$('body, html').stop().animate({ scrollTop: $("body").offset().top+yvalue },300);
-							}else if(yvalue<cal_height){
-								if((yvalue*-1)>cal_height){
-									$('body, html').stop().animate({ scrollTop: $("body").offset().top+yvalue },300);
-								}
-							}
-						}
+						// if(yvalue==0){
+						// 	// click_move();
+						// }else{
+						// 	if(yvalue>cal_height){
+						// 		$('body, html').stop().animate({ scrollTop: $("body").offset().top+yvalue },300);
+						// 	}else if(yvalue<cal_height){
+						// 		if((yvalue*-1)>cal_height){
+						// 			$('body, html').stop().animate({ scrollTop: $("body").offset().top+yvalue },300);
+						// 		}
+						// 	}
+						// }
 					}
 					$('.slide'+app_sort).remove('');
 					// start_s();
@@ -511,7 +511,7 @@ $(function(){
 						// else{
 						// 	msheight = '100vh';
 						// }
-						msheight = $('.slide').children('img').height();
+						msheight = $('.slide').children('img').height()+90;
 						article_height = $('.article').height();
 						$('.slide-wrap').css({'height':msheight});
 						// console.log(msheight+' --')
