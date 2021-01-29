@@ -27,16 +27,16 @@ input[type=button]{box-sizing:border-box;font-family:'Nanum Gothic','NanumGothic
 input[type=select]{appearance:none;}
 textarea{box-sizing:border-box;}
 
-.margin_top-10px{margin-top:10px;}
-.margin_top-20px{margin-top:20px;}
-.margin_top-30px{margin-top:30px;}
-.margin_top-40px{margin-top:40px;}
-.margin_top-50px{margin-top:50px;}
-.margin_top-60px{margin-top:60px;}
-.margin_top-70px{margin-top:70px;}
-.margin_top-80px{margin-top:80px;}
+.margin_top-10px{margin-top:10px!important;}
+.margin_top-20px{margin-top:20px!important;}
+.margin_top-30px{margin-top:30px!important;}
+.margin_top-40px{margin-top:40px!important;}
+.margin_top-50px{margin-top:50px!important;}
+.margin_top-60px{margin-top:60px!important;}
+.margin_top-70px{margin-top:70px!important;}
+.margin_top-80px{margin-top:80px!important;}
 .margin_top-90px{margin-top:90px!important;}
-.margin_top-100px{margin-top:100px;}
+.margin_top-100px{margin-top:100px!important;}
 
 .margin_bottom-10px{margin-bottom:10px;}
 .margin_bottom-20px{margin-bottom:20px;}
@@ -58,8 +58,9 @@ textarea{box-sizing:border-box;}
 .bg_black{background-color:rgba(0,0,0,1);}
 .bg_white{background-color:rgba(255,255,255,1);}
 
-.color_black{color:#000;}
-.color_white{color:#fff;}
+.color_black{color:#000!important;}
+.color_white{color:#fff!important;}
+.color_coral{color:#424985!important;}
 
 .clear_both{clear:both;}
 
@@ -206,8 +207,6 @@ textarea{box-sizing:border-box;}
 .section .article .contents .graph .graph-img .circle{max-width:640px;margin:80px auto 0;}
 
 /* .section .article .contents .graph-2 .graph-img .img-wrap img{width:90%;} */
-.section .article .contents .intro .board_ceo{width:100%;max-width:1280px; min-height:200px;margin:60px auto 0;overflow:hidden;opacity:1;}
-.section .article .contents .intro .board_ceo iframe{width:100%;min-height:500px;border:0;overflow:hidden;}
 
 .section .article .contents .sevice_title{min-width:320px;width:100%;background:#161b61;margin:0 auto;padding:1em 1em 1em 1em;color:#fff;transition:all 0.3s;}
 /* .section .article .contents .sevice_title:before{content:'';display:block;position:absolute;width:470px;height:42px;background:#efefef;top:30px;left:0;} */
@@ -248,11 +247,14 @@ textarea{box-sizing:border-box;}
 .section .article .contents .card_5{transition:all 1.1s;}
 .section .article .contents .card_6{transition:all 1.3s;}
 
-.section .article .contents .intro{background:#f5f5f5;padding:63px 0;}
-.section .article .contents .intro .intro-analysis{width:100%;max-width:1080px;min-height:120px;background:#d9d9d9;margin:0 auto;color:#6c6c6c;font-size:17px;text-align:center;}
-.section .article .contents .intro .intro-analysis .intro-title{font-size:25px;color:#7f7f7f;font-weight:700;padding:14px 20px;}
-.section .article .contents .intro .intro-analysis .intro-title span{color:#424985;}
-.section .article .contents .intro .intro-analysis .intro-box{padding:10px 40px 25px;}
+.section .article .contents .intro-wrap{width:100%;max-width:1280px; min-height:200px;margin:60px auto 0;overflow:hidden;opacity:1;}
+.section .article .contents .intro-wrap .intro{background:#f5f5f5;padding:63px 0;}
+.section .article .contents .intro-wrap .intro .intro-analysis{width:100%;max-width:1080px;min-height:120px;background:#d9d9d9;margin:0 auto;color:#6c6c6c;font-size:17px;text-align:center;}
+.section .article .contents .intro-wrap .intro .intro-analysis .intro-title{font-size:25px;color:#7f7f7f;font-weight:700;padding:14px 20px;}
+.section .article .contents .intro-wrap .intro .intro-analysis .intro-title span{color:#424985;}
+.section .article .contents .intro-wrap .intro .intro-analysis .intro-box{padding:10px 40px 25px;}
+.section .article .contents .intro-wrap .ci-wrap{width:100%;min-width:320px;max-width:1080px;margin:0 auto;}
+.section .article .contents .intro-wrap .ci-wrap img{width:100%;float:none;}
 
 .section .article .contents .greeting .qna-board{width:100%;max-width:1280px; min-height:200px;margin:60px auto 0;overflow:hidden;opacity:1;}
 .section .article .contents .greeting .qna-board iframe{width:100%;min-height:500px;border:0;overflow:hidden;}
