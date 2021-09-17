@@ -664,7 +664,7 @@ $(function(){
 									$('.volume_btn').find('span').html('음소거 중 입니다.');
 								}
 							});
-							$('.video_player').find('.volume_bar_wrap').on('mousedown mouseup click',function(event){
+							$('.video_player').find('.volume_bar_wrap').on('mousedown mousemove mouseup click',function(event){
 								var video_obj;
 								var sound_y;
 								var sound_per_end;
@@ -674,7 +674,7 @@ $(function(){
 								if (event.type=='mousedown'){
 									sound_y=event.pageY;
 									
-								}else if(event.type=='mouseup'){
+								}else if(event.type=='mousemove'){
 									sound_y=event.pageY;
 									video_obj = document.getElementById('video_move');
 									var sound_wrap_top = Math.floor($(this).offset().top);
